@@ -34,7 +34,7 @@ bufferSize=12
 socketSendCommands = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 socketSendCommands.bind((serverAddress,serverPort))
 socketSendCommands.listen(1)
-print("Sever {ip} opened at port {port}\n".format(ip=serverAddress,port=serverPort))
+print("Server {ip} opened at port {port}\n".format(ip=serverAddress,port=serverPort))
 (connection, address) = socketSendCommands.accept()
 print("Connection established {addr}\n".format(addr=address))
 
